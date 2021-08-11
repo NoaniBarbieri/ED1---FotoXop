@@ -37,7 +37,7 @@ Imagem *alocaImagem(int largura, int altura){
 
     img->pixel = mallocSafe(altura * sizeof(Pixel*));
     for(i = 0; i < altura; i++){
-        img->pixel[i] = mallocSafe(largura * sizeof(Pixel*));
+        img->pixel[i] = mallocSafe(largura * sizeof(Pixel));
     }
     return img;
 }
